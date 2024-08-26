@@ -153,7 +153,7 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-h9gMAjE09f6nQ9zO7wdC+fspLKE6z5tlypHzdObJRGA=";
   };
 
-  workingDirectory = "${builtins.currentSystem}-src";
+  workingDirectory = "/var/lib/wazuh-agent-src";
 
   env = {
     OSSEC_LIBS = "-lzstd";
